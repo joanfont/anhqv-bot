@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  bot:
+    image: joanfont/anhqv-bot
+    build: .
+    volumes:
+      - .:/code/
+    env_file:
+      - .env.sample
+      - .env
